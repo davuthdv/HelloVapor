@@ -7,5 +7,15 @@ pipeline {
                 echo 'Building...'
             }
         }
+        stage('Hello') {
+            steps {
+                echo 'Hello, Jenkins!'
+            }
+        }
+        stage('Done') {
+            steps {
+                echo 'Done'
+            }
+        }
     }
 }
